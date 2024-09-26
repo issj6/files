@@ -14,12 +14,13 @@ let iframe; // 声明 iframe 变量
 button.addEventListener('click', () => {
     if (!iframe) {
         iframe = document.createElement('iframe');
-        iframe.src = 'https://example.com'; // 替换为你想嵌入的网页
+        iframe.src = 'http://10.239.89.37:8501/?kb=066a1cf4'; // 替换为你想嵌入的网页
         iframe.style.position = 'fixed';
         iframe.style.bottom = '60px'; // 调整位置以避免覆盖按钮
         iframe.style.right = '20px';
-        iframe.style.width = '300px'; // 设置宽度
-        iframe.style.height = '200px'; // 设置高度
+        iframe.style.width = '400px'; // 设置宽度
+        iframe.style.height = '600px'; // 设置高度
+        iframe.style.border = '1px'; // 设置高度
         iframe.style.zIndex = '1000'; // 确保在最上层
         document.body.appendChild(iframe);
     } else {
